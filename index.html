@@ -1,0 +1,190 @@
+<<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Smart Finance Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>💎 SMART FINANCE TRACKER</h1>
+
+<p class="tagline">Manage Your Money Smarter 🚀</p>
+
+
+
+<div class="cards">
+
+
+<div class="card balance">
+<h2>💰 BALANCE</h2>
+<h3 id="balance">₹0</h3>
+</div>
+
+
+<div class="card income">
+<h2>💵 INCOME</h2>
+<h3 id="income">₹0</h3>
+</div>
+
+
+<div class="card expense">
+<h2>💸 EXPENSE</h2>
+<h3 id="expense">₹0</h3>
+</div>
+
+
+<div class="card saving">
+<h2>🎯 SAVINGS</h2>
+<h3 id="saving">₹0</h3>
+</div>
+
+
+</div>
+
+
+
+
+<div class="section transaction">
+
+
+<h2>➕ ADD TRANSACTION</h2>
+
+
+<input id="name" placeholder="Enter Name">
+
+
+<input id="amount" type="number" placeholder="Enter Amount">
+
+
+<select id="category">
+
+<option>Food</option>
+<option>Travel</option>
+<option>Shopping</option>
+<option>Bills</option>
+<option>Other</option>
+
+</select>
+
+
+<input id="date" type="date">
+
+
+
+<select id="type">
+
+<option value="income">Income</option>
+
+<option value="expense">Expense</option>
+
+</select>
+
+
+
+<button onclick="addTransaction()">
+
+ADD TRANSACTION
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="section history">
+
+
+<h2>🧾 TRANSACTION HISTORY</h2>
+
+
+<div id="history">
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="section analysis">
+
+
+<h2>📊 CATEGORY ANALYSIS</h2>
+
+
+<p>🟢 Food 40%</p>
+
+<div class="line food"></div>
+
+
+<p>🔵 Travel 20%</p>
+
+<div class="line travel"></div>
+
+
+<p>🔴 Shopping 30%</p>
+
+<div class="line shopping"></div>
+
+
+<p>🟡 Other 10%</p>
+
+<div class="line other"></div>
+
+
+</div>
+
+
+
+
+<div class="section report">
+
+
+<h2>📈 MONTHLY REPORT</h2>
+
+
+<p>January</p>
+<div class="month jan">70%</div>
+
+
+<p>February</p>
+<div class="month feb">50%</div>
+
+
+<p>March</p>
+<div class="month mar">80%</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
